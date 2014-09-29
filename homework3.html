@@ -142,31 +142,32 @@ Oceania
 <div id="task-2" class="section level3">
 <h3>Task 2</h3>
 <p>Determine spread of GDP per capita within the continents.</p>
+<p><strong>Note: It may show up blank first. Adjust size by pressing bottom right corner of plot and it’ll show up.</strong></p>
 <pre class="r"><code>gtbl %&gt;% ggvis(x=~gdpPercap, stroke=~continent) %&gt;%
   group_by(continent) %&gt;%
   layer_densities(area=F, strokeWidth:=2) %&gt;%
   add_axis(&quot;y&quot;, title=&quot;density&quot;, title_offset=70)</code></pre>
-<p><div id="plot_id760041892-container" class="ggvis-output-container">
-<div id="plot_id760041892" class="ggvis-output"></div>
+<p><div id="plot_id769802169-container" class="ggvis-output-container">
+<div id="plot_id769802169" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id760041892_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id760041892" data-renderer="svg">SVG</a>
+<a id="plot_id769802169_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id769802169" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id760041892_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id760041892" data-renderer="canvas">Canvas</a>
+<a id="plot_id769802169_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id769802169" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id760041892_download" class="ggvis-download" data-plot-id="plot_id760041892">Download</a>
+<a id="plot_id769802169_download" class="ggvis-download" data-plot-id="plot_id769802169">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id760041892_spec = {
+var plot_id769802169_spec = {
 	"data" : [
 		{
 			"name" : "gtbl0/regroup1/density2_flat",
@@ -336,7 +337,7 @@ var plot_id760041892_spec = {
 	},
 	"handlers" : null
 };
-ggvis.getPlot("plot_id760041892").parseSpec(plot_id760041892_spec);
+ggvis.getPlot("plot_id769802169").parseSpec(plot_id769802169_spec);
 </script></p>
 <p>This plot is done by ggvis. We can see that Oceania’s distribution of gdp per capita is higher overall than the other continents. Asia has a few countries with an extreme maximum. Also, Africa’s gdp per capita is skewed with many countries with low gdp per capita, while fewer numbers with high gdp per capita.</p>
 </div>
@@ -528,7 +529,7 @@ weightedMeanLifeExp
 outTable = dcast(out, year ~ continent, value.var=&quot;relLowExp&quot;)
 mp = mPlot(x=&quot;year&quot;, y=names(outTable %&gt;% select(-year)), data=outTable, 
       type=&quot;Line&quot;)</code></pre>
-<iframe src=" ./homework3_files/figure-html/unnamed-chunk-9.html " scrolling="no" frameBorder="0" seamless class="rChart morris " id="iframe-" chart1f1c574c2c8>
+<iframe src=" ./homework3_files/figure-html/unnamed-chunk-9.html " scrolling="no" frameBorder="0" seamless class="rChart morris " id="iframe-" chart336c1ada4b8f>
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 <p>This is from rCharts. Sorry I couldn’t figure out how to add titles, axis, and good formating in general. The y-axis represents the % of countries for a particular continent with life expectancy lower than 40. The x-axis is the year.</p>
