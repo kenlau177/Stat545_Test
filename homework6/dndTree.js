@@ -1,8 +1,6 @@
 // Get JSON data
 
-treeJSON = d3.json("https://gist.githubusercontent.com/robschmuecker/0f29a2c867dcb1b44d18/raw/513044cb1f006112c40a4e07f59a97f3304e8614/flare.json")
-	.header("Content-Type", "application/x-www-form-urlencoded")
-	.post("a=2&b=3", function(error, treeData) {
+treeJSON = d3.json("test.json", function(error, treeData) {
 
 console.log(treeData);
 console.log(error);
@@ -374,7 +372,7 @@ console.log(treeJSON);
             // d.y = (d.depth * 500); //500px per level.
         });
 
-        // Update the nodes…
+        // Update the nodesÂ…
         node = svgGroup.selectAll("g.node")
             .data(nodes, function(d) {
                 return d.id || (d.id = ++i);
@@ -468,7 +466,7 @@ console.log(treeJSON);
         nodeExit.select("text")
             .style("fill-opacity", 0);
 
-        // Update the links…
+        // Update the linksÂ…
         var link = svgGroup.selectAll("path.link")
             .data(links, function(d) {
                 return d.target.id;
