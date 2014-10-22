@@ -1,6 +1,6 @@
 // Get JSON data
 
-treeJSON = d3.json("https://raw.githubusercontent.com/kenlau177/Stat545_Test/master/homework6/test.json", function(error, treeData) {
+treeJSON = d3.json("test.json", function(error, treeData) {
 
 console.log(treeData);
 console.log(error);
