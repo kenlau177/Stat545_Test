@@ -1,0 +1,139 @@
+{
+	"name" : "m1",
+	"children" : [
+		{
+			"name" : "m5",
+			"children" : [
+				{
+					"name" : "m3",
+					"children" : [
+						{
+							"name" : "leaf",
+							"size" : "1"
+						},
+						{
+							"name" : "leaf",
+							"size" : "1"
+						}
+					]
+				},
+				{
+					"name" : "m5",
+					"children" : [
+						{
+							"name" : "m4",
+							"children" : [
+								{
+									"name" : "m1",
+									"children" : [
+										{
+											"name" : "m4",
+											"children" : [
+												{
+													"name" : "leaf",
+													"size" : "1"
+												},
+												{
+													"name" : "leaf",
+													"size" : "1"
+												}
+											]
+										},
+										{
+											"name" : "m5",
+											"children" : [
+												{
+													"name" : "leaf",
+													"size" : "1"
+												},
+												{
+													"name" : "leaf",
+													"size" : "1"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name" : "leaf",
+									"size" : "1"
+								}
+							]
+						},
+						{
+							"name" : "m5",
+							"children" : [
+								{
+									"name" : "leaf",
+									"size" : "1"
+								},
+								{
+									"name" : "m4",
+									"children" : [
+										{
+											"name" : "m4",
+											"children" : [
+												{
+													"name" : "m3",
+													"children" : [
+														{
+															"name" : "leaf",
+															"size" : "1"
+														},
+														{
+															"name" : "leaf",
+															"size" : "1"
+														}
+													]
+												},
+												{
+													"name" : "leaf",
+													"size" : "1"
+												}
+											]
+										},
+										{
+											"name" : "m4",
+											"children" : [
+												{
+													"name" : "leaf",
+													"size" : "1"
+												},
+												{
+													"name" : "leaf",
+													"size" : "1"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name" : "m3",
+			"children" : [
+				{
+					"name" : "m2",
+					"children" : [
+						{
+							"name" : "leaf",
+							"size" : "1"
+						},
+						{
+							"name" : "leaf",
+							"size" : "1"
+						}
+					]
+				},
+				{
+					"name" : "leaf",
+					"size" : "1"
+				}
+			]
+		}
+	]
+}
