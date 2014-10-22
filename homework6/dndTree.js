@@ -1,5 +1,5 @@
 // Get JSON data
-treeJSON = d3.json("test.json", function(error, treeData) {
+treeJSON = d3.json("https://github.com/kenlau177/Stat545_Test/blob/master/homework6/test.json", function(error, treeData) {
 
     // Calculate total nodes, max label length
     var totalNodes = 0;
